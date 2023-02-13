@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>My portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="landing.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contatos</a></li>
+         </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <h1>Sobre mim</h1>
+        <p>Sou estudante de Ciência da Computação na USCS, em busca de uma oportunidade para aprimorar minhas experiências e conhecimentos. Adoro tecnologia e sou curioso por aprender.</p>
+      </section>
+
+      <section id="skills">
+        <h1>Skills</h1>
+        <ul>
+          <li>Boa comunicação</li>
+          <li>Pensamento crítico</li>
+          <li>Trabalho em equipe</li>
+          <li>HTML e CSS</li>
+          <li>PHP, C e C#</li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h1>Contatos</h1>
+          <a href=mailto:mynameistorres@gmail.com><button>Email</button>
+          </br></br><a href="https://www.linkedin.com/in/matheus-torres-37066a21a"><button>Linkedin</button>
+          </br></br><a href="https://github.com/Torress1"><button>GitHub</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>Copyright &copy; 2023 My Landing Page</p>
+    </footer>
+  </body>
+</html>
