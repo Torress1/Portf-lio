@@ -1,49 +1,76 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <title>My portfolio</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="landing.css" rel="stylesheet">
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contatos</a></li>
-         </ul>
-      </nav>
-    </header>
+<html lang="pt-br">
+ <head>
+	<title>Portfólio de Desenvolvedor</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="hellostyle.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#sobre">Sobre</a></li>
+				<li><a href="#habilidades">Habilidades</a></li>
+				<li><a href="#projetos">Projetos</a></li>
+				<li><a href="#contato">Contato</a></li>
+			</ul>
+		</nav>
+	</header>
 
-    <main>
-      <section id="about">
-        <h1>Sobre mim</h1>
-        <p>Sou estudante de Ciência da Computação na USCS, em busca de uma oportunidade para aprimorar minhas experiências e conhecimentos. Adoro tecnologia e sou curioso por aprender.</p>
-      </section>
+	<section id="home">
+		<h1>Olá, eu sou </br><span>Matheus Torres</span></h1>
+		<p>Sou um desenvolvedor apaixonado por tecnologia e inovação.</p>
+		<a href="#contato">Entre em contato</a>
+	</section>
 
-      <section id="skills">
-        <h1>Skills</h1>
-        <ul>
-          <li>Boa comunicação</li>
-          <li>Pensamento crítico</li>
-          <li>Trabalho em equipe</li>
-          <li>HTML e CSS</li>
-          <li>PHP, C e C#</li>
-        </ul>
-      </section>
+	<section id="sobre">
+		<h2>Sobre mim</h2>
+		<img src="matheus.png" alt="Sua Foto">
+		<p>Sou estudante de ciência da computação na USCS, busco um estágio para aprimorar minhas </br>experiências e conhecimentos.</p>
+	</section>
 
-      <section id="contact">
-        <h1>Contatos</h1>
-          <a href=mailto:mynameistorres@gmail.com><button>Email</button>
-          </br></br><a href="https://www.linkedin.com/in/matheus-torres-37066a21a"><button>Linkedin</button>
-          </br></br><a href="https://github.com/Torress1"><button>GitHub</button>
-      </section>
-    </main>
+	<section id="habilidades">
+		<h2>Habilidades</h2>
+		<ul>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>JavaScript</li>
+			<li>PHP</li>
+		</ul>
+	</section>
 
-    <footer>
-      <p>Copyright &copy; 2023 My Landing Page</p>
-    </footer>
-  </body>
-</html>
+	<section id="projetos">
+		<h2>Projetos</h2>
+		<div class="projeto">
+			<img src="projeto-1.jpg" alt="Projeto 1">
+			<h3>Nome do Projeto 1</h3>
+			<p>Descrição do projeto 1.</p>
+			<a href="#">Ver mais</a>
+		</div>
+		<div class="projeto">
+			<img src="projeto-2.jpg" alt="Projeto 2">
+			<h3>Nome do Projeto 2</h3>
+			<p>Descrição do projeto 2.</p>
+			<a href="#">Ver mais</a>
+		</div>
+		<div class="projeto">
+			<img src="projeto-3.jpg" alt="Projeto 3">
+			<h3>Nome do Projeto 3</h3>
+			<p>Descrição do projeto 3.</p>
+			<a href="#">Ver mais</a>
+		</div>
+	</section>
+
+	<section id="contato">
+		<h2>Contato</h2>
+		<form action="mailto: mynameistorres2004@gmail.com">
+			<label for="nome">Nome:</label>
+			<input type="text" id="nome" name="nome" required>
+		</br><label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+	    </br><label for="mensagem">Mensagem:</label>
+			<textarea id="mensagem;">Olá, quero entrar em contato! Me chamo </textarea>
+        </br><button id="enviar" type="submit" >Enviar</button>
+			</form>
