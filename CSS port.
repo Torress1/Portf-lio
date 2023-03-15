@@ -1,70 +1,200 @@
+/* Estilos gerais */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: lightgray;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 20px;
-  }
-  
-  nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav a {
-    color: black;
-    display: block;
-    padding: 10px 20px;
-    text-decoration: none;
-  }
-  
-  main {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-  }
-  
-  section {
-    background-color: rgb(255, 255, 255);
-    border: 1px solid lightgray;
-    box-shadow: 2px 2px 5px lightgray;
-    margin: 20px;
-    padding: 20px;
-    width: 50%;
-  }
-  
-  h1 {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+}
+
+a {
+	color: #007bff;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+ul {
+	list-style: none;
+}
+
+/* Estilos do cabeçalho */
+
+header {
+	background-color: #f8f8f8;
+	padding: 20px;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav ul li {
+	margin-right: 20px;
+}
+
+nav ul li:last-child {
+	margin-right: 0;
+}
+
+nav ul li a {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+/* Estilos da seção "Home" */
+
+#home {
+	background-color: #007bff;
+	color: #fff;
+	padding: 100px 20px;
+	text-align: center;
+}
+
+#home h1 {
+	font-size: 48px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+#home span {
+	color: #ffdb58;
+}
+
+#home p {
+	font-size: 20px;
+	margin-bottom: 40px;
+}
+
+#home a {
+	background-color: #fff;
+	color: #007bff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-weight: bold;
+	transition: background-color 0.2s;
+}
+
+#home a:hover {
+	background-color: #007bff;
+	color: #fff;
+}
+
+/* Estilos da seção "Sobre" */
+
+#sobre {
+	padding: 100px 20px;
+	text-align: center;
+}
+
+#sobre h2 {
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 40px;
+}
+
+#sobre img {
+	max-width: 100%;
+	margin-bottom: 40px;
+	border-radius: 50%;
+}
+
+#sobre p {
+	font-size: 20px;
+	margin-bottom: 40px;
+}
+
+/* Estilos da seção "Habilidades" */
+
+#habilidades {
+	background-color: #f8f8f8;
+	padding: 100px 20px;
+	text-align: center;
+}
+
+#habilidades h2 {
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 40px;
+}
+
+#habilidades ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+#habilidades li {
+	background-color: #fff;
+	color: #007bff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-weight: bold;
+	margin: 10px;
+}
+
+/* Estilos da seção "Projetos" */
+
+#projetos {
+	padding: 100px 20px;
+	text-align: center;
+}
+
+#projetos h2 {
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 40px;
+}
+
+.projeto {
+	max-width: 300px;
+	margin: 0 auto 40px;
+}
+
+.projeto img {
+	max-width: 100%;
+	border-radius: 5px;
+}
+
+.projeto h3 {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.projeto p {
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+.projeto a {
+	background-color: #fff;
+	color: #007bff;
+}
+
+/* Estilos da seção "Contatos" */
+
+#contato {
     text-align: center;
-  }
-   
-  label, input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-  }
-  
-  button {
-    background-color: rgb(45, 1, 243);
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-  
-  footer {
-    background-color: lightgray;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
-  
+
+}
+
+#contato h2 {
+    text-align: center;
+}
+
+#mensagem {
+	height: 10;
+	rows:20
+}
